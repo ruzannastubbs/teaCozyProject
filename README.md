@@ -1,5 +1,5 @@
 # Tea Cozy Project
-##Main focus on responsive design
+##Main focus is on responsive design
 
 ##Technologies
 * HTML
