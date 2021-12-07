@@ -2,8 +2,8 @@
 ##Main focus on responsive design
 
 ##Technologies
-*HTML
-*CSS
-*Media Queries
-*Visual Studio
-*Git Bash
+* HTML
+* CSS
+* Media Queries
+* Visual Studio
+* Git Bash
