@@ -1,0 +1,213 @@
+body {
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Navbar specifications */
+.navbar {
+	width: 100%;
+	height: 69px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid seashell;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+@media only screen and (min-width: 310px) and (max-width: 560px){
+.navbar {
+	height: 85px;
+	flex-direction: column;
+	line-height: 0;
+	font-size: 18px;
+  }
+}
+.navbar .logo img {
+	height: 50px;
+	padding-left: 10px;
+}
+.navbar ul {
+	list-style: none;
+	text-decoration: underline;
+	display: flex;	
+}
+.navbar a {
+	padding-right: 12px;
+	color: seashell;
+}
+/*Mission section / if  % and vh are used instead of px hard coding, a lot of time and nerves can be saved!!!!*/
+.mission-container {
+	/*width: 1200px;
+	height: 700px;*/
+	width: 90%;
+	height: 80vh;
+	background-image: url(../images/img-mission-background.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	display: flex;
+}
+.mission-title{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.mission-title .mission-h{
+   width: 100%;
+   background-color: black;
+   margin: 0;
+}
+@media only screen and (min-width: 359px) and (max-width: 570px){
+	.mission-container {
+	height: 62vh;
+ }
+}
+/*using % and vh could have saced me from writing so many media queries*/
+/*@media only screen and (min-width: 1000px) and (max-width: 1220px){
+	.mission-container {
+	width: 1000px;
+	height: 500px;
+ }
+ .mission-title {
+	padding-top: 15%;
+ }
+}
+@media only screen and (min-width: 700px) and (max-width: 999px){
+	.mission-container {
+	width: 700px;
+	height: 400px;
+ }
+ .mission-title {
+	padding-top: 12%;
+ }
+}
+@media only screen and (min-width: 500px) and (max-width: 699px){
+	.mission-container {
+	width: 500px;
+	height: 400px;
+ }
+ .mission-title {
+	padding-top: 13%;
+ }
+}
+@media only screen and (min-width: 350px) and (max-width: 499px){
+	.mission-container {
+	width: 350px;
+	height: 340px;
+ }
+ .mission-title {
+	padding-top: 13%;
+ }
+}*/
+
+
+/* Tea of the Month section -trend */
+
+.trend-container {
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.trend-container .trend-gallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+.trend-container .trend-gallery img {
+	width: 300px;
+	height: 200px;
+	margin-top: 9px;
+}
+/* Locations section */
+
+.locations-container {
+	width: 90%;
+	height: 500px;
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 25px;
+	background-image: url(../images/img-locations-background.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.locations-container .locations-divs-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap:  wrap;
+}
+.locations-container .locations-divs-wrapper .locations-divs {
+	width: 300px;
+	background-color: black;
+	margin: 7px 40px;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1285px){
+.locations-container  {
+	height: 750px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 859px){
+.locations-container  {
+	height: 950px;
+  }
+}
+/*Footer section*/
+footer .footer-info-container {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 12px;
+}
+footer .copyright {
+	display: flex;
+	align-items: left;
+	padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
