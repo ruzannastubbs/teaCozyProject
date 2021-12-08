@@ -2,7 +2,7 @@ body {
 	font-family: Helvetica;
 	font-size: 22px;
 	color: seashell;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.959);
 	opacity: 0.9;
 	text-align: center;
 	margin: 0;
@@ -17,12 +17,12 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid seashell;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.925);
 	position: fixed;
 	top: 0;
 	left: 0;
 }
-@media only screen and (min-width: 310px) and (max-width: 560px){
+@media only screen and (min-width: 310px) and (max-width: 648px){
 .navbar {
 	height: 85px;
 	flex-direction: column;
@@ -32,15 +32,18 @@ body {
 }
 .navbar .logo img {
 	height: 50px;
-	padding-left: 10px;
+	margin-left: 20px;
 }
-.navbar ul {
+.navbar ul{
 	list-style: none;
 	text-decoration: underline;
 	display: flex;	
+	margin-right: 25px;	
+}
+.navbar ul li {
+	padding-right: 5px;
 }
 .navbar a {
-	padding-right: 12px;
 	color: seashell;
 }
 /*Mission section / if  % and vh are used instead of px hard coding, a lot of time and nerves can be saved!!!!*/
@@ -67,7 +70,9 @@ body {
 }
 .mission-title .mission-h{
    width: 100%;
-   background-color: black;
+   background-color: rgba(0, 0, 0, 0.8);
+   opacity: 0.7;
+   padding: 7px;
    margin: 0;
 }
 @media only screen and (min-width: 359px) and (max-width: 570px){
@@ -166,7 +171,7 @@ body {
 }
 .locations-container .locations-divs-wrapper .locations-divs {
 	width: 300px;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.8);
 	margin: 7px 40px;
 }
 
@@ -187,16 +192,30 @@ footer .footer-info-container {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	line-height: 12px;
+	
 }
-footer .copyright {
+
+footer .footer-info-container p {
+	margin: 5px 0;
+}
+footer .footer-copyright-container {
 	display: flex;
-	align-items: left;
-	padding-left: 20px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 35px;
+	font-size: 17px;
+}
+footer .footer-copyright-container .social-icons a{
+	color: rgb(158, 161, 163);
+	letter-spacing: 15px;
+	text-decoration: none;
 }
 
-
-
+@media only screen and (min-width: 320px) and (max-width: 859px){
+	footer .footer-copyright-container {
+		flex-direction: column;
+	}
+}
 
 
 
